@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+
+    text-decoration: none;
+    color: #333;
+}
+.note{
+    background: coral;
+}
+p{
+    margin: 10px 0;
+}
+.boxnav{
+    max-width: 1146px;
+    margin: auto;
+    padding-right: 0 20px;
+    overflow: auto;
+}
+.text-primary{
+    color: orange;
+}
+.lead{
+    font-size: 20px;
+}
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #333;
+    padding: 8px 16px;
+}
+.btn:hover{
+    background: orange;
+    color: #333;
+}
+.btn-light{
+    background: #fff;
+    color: black;
+}
+.bg-dark{
+    color: wheat;
+    background: #333;
+}
+.bg-primary{
+    background: orange;
+    color: #333;
+}
+.bg-light{
+    background:aquamarine;
+    color: black;
+
+}
+.night{
+    clear: both;
+}
+.headd{
+    font-size: 40px;
+}
+/* padding */
+.py-1{
+    padding: 10px 0;
+}
+.py-2{
+    padding: 20px 0;
+}
+.pass{padding: 
+    30px 0;}
+
+#navbar{
+    background: #333;
+    color: #fff;
+    overflow: auto;
+    position: sticky;
+    top: 0;
+}
+#navbar .boxnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar a{
+    color: #fff;
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+}
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+#navbar ul li a:hover,
+#navbar ul li a.current{
+    background: #444;
+    color: #f7c08a;
+}
+.showcont{
+    height: 600px;
+    background: url("./img/showcase.jpg") no-repeat center center/cover;
+    
+}
+#showcase{
+    height: 600px;
+    background: url('./img/showcase.jpg') no-repeat center center/ cover ;
+    display: flex;
+}
+#showcase .showcont{
+    color: #fff;
+    display: flex;
+flex-direction: column;
+align-items: center;
+    text-align: center;
+}
+#showcase .showcont h1{
+    font-size: 60px;
+    line-height: 1.2em;
+}
+#showcase .showcont p{
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+#mhome{
+    height: 400px;
+    display: flex;
+}
+#mhome .mimg{
+    width: 50%;
+    background: url('./img/photo-1.jpg') no-repeat center center/cover;
+    min-height: 100%;
+}
+#mhome .mcontent {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mhome .mcontent p{
+padding-bottom: 30px;
+}
+#features{
+    display: flex;
+}
+.box{
+    flex: 1;
+    padding: 50px;
+    text-align: center;
+}
+.box i{
+    margin-bottom: 10px;
+}
+#atinfo .inright{
+width: 50%;
+min-height: 100%;
+}
+#atinfo .inright img{
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 50%;
+}
+#atinfo .inleft{
+    width: 50%;
+    min-height: 100%;
+}
+#tests{
+   
+    background: url('./img/test-bg.jpg') no-repeat center center/cover;
+    padding-top: 100px;
+}
+#texts h2{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#tests .test{
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    opacity: .8;
+}
+#tests .test img{
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+#contact-form .fmgroup{
+    margin-bottom: 20px;
+}
+#contact-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+#contact-form input,
+#contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+#contact-form textarea{
+    height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus{
+    outline: none;
+    border-color: #f7c08a;
+}
+#mfooter{
+    text-align: center;
+    background: #444;
+    color: #fff;
+    padding: 20px;
+}
+@media(max-width: 991px){
+    #minfo{
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+    } 
+    #minfo .mimg,
+    #minfo .mcontent{
+        width: 100%;
+        min-height: 50%;
+    }
+    #features{
+        flex-direction: column;
+    }
+    #showcase .showcont h1{
+        font-size: 40px;
+    }
+    #navbar ul{
+        margin-left: 15px;
+    }
+    #navbar ul li a{
+        padding: 15px;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
